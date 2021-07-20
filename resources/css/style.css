@@ -1,7 +1,6 @@
 * {
   font-family: "Inter", sans-serif;
   box-sizing: border-box;
-  width: 320px;
 }
 
 /* MAIN CONTAINER WITH MENU + 2 MAIN ARTICLES */
@@ -11,12 +10,16 @@
   font-size: 22px;
   font-weight: 500;
   line-height: 28px;
+  width: 320px;
+  display: flex;
+  flex-direction: column;
 }
 
 /* NAVIGATION */
 
 nav {
   display: inline-flex;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -39,6 +42,7 @@ nav {
   height: 12px;
   margin-right: 20px;
   visibility: visible;
+  justify-content: flex-end;
 }
 
 /* FIRST MAIN ARTICLE */
@@ -67,6 +71,9 @@ nav {
   color: grey;
   margin-bottom: 70px;
   margin-left: 20px;
+  font-size: 14px;
+  justify-self: left;
+  width: 320px;
 }
 
 /* SECOND MAIN ARTICLE */
@@ -98,31 +105,57 @@ nav {
   position: absolute;
   z-index: 1;
   margin: 250px 0px 70px 40px;
+  font-size: 14px;
 }
 
 /* SMALL ARTICLES */
 
-.container-article-list {
-  border: 2px black solid;
-  display: inline-flex;
-  flex-wrap: wrap;
+.container-articles-small {
+  /* border: 2px black solid;
+  display: inline-flex; */
 }
 
 .article-small {
+  display: inline-flex;
 }
 
 .text {
   border: 2px red solid;
   flex-direction: column;
-  max-width: 50%;
 }
 
+.text p {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.button-time {
+  border: 2px red solid;
+  display: inline-flex;
+  align-items: baseline;
+}
+
+.posted-time {
+  font-size: 14px;
+  font-weight: 400;
+  color: #e3b2ae;
+  border: 2px blue solid;
+}
 .image {
   border: 2px blue solid;
-  max-width: 50%;
   justify-content: flex-end;
 }
 .article-small img {
   width: 104px;
   height: 104px;
+}
+
+.article-small button {
+  border: none;
+  background: none;
+  text-align: left;
+  text-decoration: underline;
+  color: grey;
+  margin-bottom: 70px;
+  font-size: 14px;
 }
