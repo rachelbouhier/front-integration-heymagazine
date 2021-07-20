@@ -1,7 +1,6 @@
 * {
   font-family: "Inter", sans-serif;
   box-sizing: border-box;
-  /* border: 1px red solid; */
   width: 320px;
 }
 
@@ -35,17 +34,17 @@ nav {
   justify-content: flex-end;
 }
 
-.menu {
+#menu {
   width: 16px;
   height: 12px;
   margin-right: 20px;
+  visibility: visible;
 }
 
 /* FIRST MAIN ARTICLE */
 
 .container-article-big-1 {
   display: flex;
-  border: 2px blue solid;
   flex-wrap: wrap;
   justify-content: flex-end;
 }
@@ -53,18 +52,15 @@ nav {
 .container-article-big-1 img {
   width: 296px;
   height: 296px;
-  border: 2px purple solid;
   margin-bottom: 10px;
 }
 
 .container-article-big-1 p {
-  margin: 5px 50px 5px 20px;
-  border: 2px purple solid;
+  margin: 5px 50px 10px 20px;
 }
 
 .container-article-big-1 button {
-  border: 2px purple solid;
-  /* border: none; */
+  border: none;
   background: none;
   text-align: left;
   text-decoration: underline;
@@ -76,38 +72,57 @@ nav {
 /* SECOND MAIN ARTICLE */
 
 .container-article-big-2 {
-  border: 2px orange solid;
-  position: relative;
+  height: 270px;
 }
 
 .container-article-big-2 img {
   width: 296px;
   height: 296px;
-  border: 2px pink solid;
   margin-bottom: 10px;
   float: right;
 }
 
 .container-article-big-2 p {
-  margin: 5px 50px 5px 20px;
-  border: 2px yellow solid;
+  margin: 150px 0px 5px 40px;
+  max-width: 250px;
   position: absolute;
-  bottom: 0px;
+  z-index: 1;
 }
 
 .container-article-big-2 button {
-  border: 2px purple solid;
-  /* border: none; */
+  border: none;
   background: none;
   text-align: left;
   text-decoration: underline;
   color: grey;
-  margin-bottom: 70px;
-  margin-left: 20px;
   position: absolute;
+  z-index: 1;
+  margin: 250px 0px 70px 40px;
 }
 
-/* .article-small img {
+/* SMALL ARTICLES */
+
+.container-article-list {
+  border: 2px black solid;
+  display: inline-flex;
+  flex-wrap: wrap;
+}
+
+.article-small {
+}
+
+.text {
+  border: 2px red solid;
+  flex-direction: column;
+  max-width: 50%;
+}
+
+.image {
+  border: 2px blue solid;
+  max-width: 50%;
+  justify-content: flex-end;
+}
+.article-small img {
   width: 104px;
   height: 104px;
-} */
+}
