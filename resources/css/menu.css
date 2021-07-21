@@ -1,0 +1,25 @@
+* {
+  font-family: "Inter", sans-serif;
+  box-sizing: border-box;
+  margin: 0px 0px;
+}
+
+.all-container {
+  width: 320px;
+  height: 568px;
+  display: flex;
+  flex-direction: column;
+  border: 2px blue solid;
+}
+
+.logo-close {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.cross {
+  height: 12px;
+}
