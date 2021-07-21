@@ -1,5 +1,6 @@
 let clickOnMenu = document.getElementById("menu");
+let menuOpen = document.getElementById("container-menu-open");
 
 clickOnMenu.addEventListener("click", function () {
-  clickOnMenu.style.visibility = "hidden";
+  menuOpen.style.display = "flex";
 });

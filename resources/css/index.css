@@ -276,3 +276,59 @@ nav {
   left: 40%;
   top: 15%;
 }
+
+/* MENU WHEN OPENED */
+
+#container-menu-open {
+  width: 320px;
+  height: 568px;
+  display: none;
+  position: absolute;
+  flex-direction: column;
+  padding-left: 20px;
+  background-color: white;
+}
+
+.logo-close {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.cross {
+  height: 12px;
+  margin-left: auto;
+  padding-right: 20px;
+}
+
+.menu-list {
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.menu-list p {
+  margin-bottom: 20px;
+}
+
+.social-network-contact {
+  display: inline-flex;
+  justify-content: space-between;
+  margin-top: auto;
+  margin-bottom: 30px;
+}
+
+.social-network {
+  display: flex;
+}
+
+.contact {
+  display: flex;
+  padding-right: 20px;
+  opacity: 0.3;
+  font-size: 14px;
+}
+
+.insta-icon {
+  padding-right: 20px;
+}
