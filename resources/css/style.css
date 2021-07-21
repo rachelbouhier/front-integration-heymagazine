@@ -4,14 +4,20 @@
   margin: 0px 0px;
 }
 
-/* MAIN CONTAINER WITH MENU + 2 MAIN ARTICLES */
+/* WHOLE PAGE CONTAINER */
 
-.container-main {
-  background-color: #e3b2ae;
+.container-whole-page {
   font-size: 22px;
   font-weight: 500;
   line-height: 28px;
   width: 320px;
+  display: flex;
+  flex-direction: column;
+}
+/* MAIN CONTAINER WITH MENU + 2 MAIN ARTICLES */
+
+.container-main {
+  background-color: #e3b2ae;
   display: flex;
   flex-direction: column;
 }
@@ -27,6 +33,7 @@ nav {
 .container-logo {
   display: flex;
 }
+
 .logo {
   width: 80px;
   height: 41px;
@@ -126,7 +133,8 @@ nav {
 .text-left {
   font-size: 16px;
   font-weight: 500;
-  padding: 70px 20px 10px 20px;
+  padding: 50px 20px 10px 20px;
+  line-height: 20px;
 }
 
 .button-time {
@@ -141,7 +149,7 @@ nav {
   color: #e3b2ae;
 }
 .image {
-  padding: 60px 0px 0px 0px;
+  padding: 50px 0px 0px 0px;
 }
 .article-small img {
   width: 104px;
@@ -155,4 +163,116 @@ nav {
   text-decoration: underline;
   color: grey;
   font-size: 14px;
+}
+
+/* THIRD MAIN ARTICLE */
+
+.container-article-big-3 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  width: 320px;
+}
+
+.container-article-big-3 img {
+  width: 296px;
+  height: 296px;
+  margin-top: 10px;
+}
+
+.text-big {
+  margin: 30px 50px 10px 20px;
+}
+
+.container-article-big-3 button {
+  border: none;
+  background: none;
+  text-align: left;
+  text-decoration: underline;
+  color: grey;
+  font-size: 14px;
+  justify-self: left;
+  margin-right: 130px;
+}
+
+/* NEWSLETTER */
+
+.container-newsletter {
+  background-color: #ffff93;
+  /* justify-content: center; */
+  display: flex;
+  flex-direction: column;
+  height: 320px;
+  margin-top: 40px;
+}
+
+.title-newsletter {
+  display: inline-flex;
+  font-size: 32px;
+  font-weight: 500;
+  justify-content: center;
+  padding-bottom: 10px;
+  padding-top: 50px;
+}
+
+.email {
+  display: flex;
+  justify-content: center;
+}
+
+.email input {
+  height: 40px;
+  border: none;
+  text-align: center;
+  font-size: 16px;
+}
+
+::placeholder {
+  color: black;
+  opacity: 1;
+}
+
+.CTA {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.CTA button {
+  border: none;
+  background: black;
+  text-align: center;
+  color: white;
+  font-size: 16px;
+  width: 50%;
+  padding: 10px 5px;
+  margin-right: 35px;
+}
+
+.social-network-icons {
+  display: flex;
+  justify-content: center;
+  padding-top: 80px;
+}
+
+.insta-icon {
+  padding-right: 20px;
+}
+
+/* LOGO END */
+
+.container-logo-end {
+  position: relative;
+
+  margin-top: 60px;
+}
+
+.h-y {
+  position: relative;
+  left: 30%;
+}
+
+.loading-icon {
+  position: absolute;
+  left: 40%;
+  top: 15%;
 }
